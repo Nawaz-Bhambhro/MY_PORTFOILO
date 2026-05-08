@@ -1,0 +1,54 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #fff;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1320px;
+        width: 100%;
+        max-height: 80px;
+        margin: 0 auto;
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: #364153;
+
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 4px;
+            list-style: none;
+            color: #364153;
+
+            li {
+                cursor: pointer;
+                transition: 0.3s;
+                padding: 15px 20px;
+                font-size: 16px;
+                color: black;
+                border-radius: 8px;
+
+                &:hover,
+                &.active {
+                    background-color: #9929FB;
+                    color: white;
+                }
+
+                // ✅ THIS is what you need
+                &:last-child {
+                    background-color: #9929FB;
+                    color: white;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+}
